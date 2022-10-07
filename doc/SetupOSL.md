@@ -63,6 +63,19 @@
    ```sh
    sudo cp ./crc-linux-2.9.0-amd64/crc /usr/local/bin
    ```
+1. If you have a proxy server, run the following commands.
+   ```sh
+   crc config set http-proxy <your proxy server>
+   ```
+   ```sh
+   crc config set https-proxy <your proxy server>
+   ```
+   ```sh
+   crc config set no-proxy 127.0.0.1,192.168.130.11
+   ```
+   ```sh
+   crc config set proxy-ca-file <CA file>
+   ```
 1. Run the following command.
    ```sh
    crc setup
